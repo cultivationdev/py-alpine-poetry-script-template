@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "py-alpine-poetry-script-template"
+version = "0.1.0"
+description = "Poetry specification for library dependencies"
+authors = ["Kyle Clark <github.com/cultivationdev>"]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
