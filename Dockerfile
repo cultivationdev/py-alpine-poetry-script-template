@@ -34,10 +34,6 @@ ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
 # Install Poetry (uses $POETRY_HOME & $POETRY_VERSION environment variables)
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 
-ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
-
-#ENV PATH="/opt/poetry/bin:$PATH"
-
 # Copy Python requirements and install only runtime dependencies
 WORKDIR $PYSETUP_PATH
 COPY ./poetry.lock ./pyproject.toml ./
